@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Calc</title></head>
+    <body>
+        <h4>Use this to add two numbers</h4>
+        <form>
+            <label for="firstnum">First Number: </label><br>
+            <input type="number" id="num1"><br>
+            <label for="secondnum">Second Number: </label><br>
+            <input type="number" id="num2"><br>
+            <span id="result"></span><br>
+            <input type="button" value="Add" onclick="add();">
+            <script>
+                function add(){
+                    let fnum = parseInt(document.getElementById("num1").value);
+                    let snum = parseInt(document.getElementById("num2").value);
+                    sumr = fnum+snum;
+                    document.getElementById("result").innerHTML=sumr;
+                }
+            </script>
+        </form>
+    </body>
+</html>
